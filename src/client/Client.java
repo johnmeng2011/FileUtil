@@ -37,7 +37,7 @@ public class Client {
          //读取服务器返回的消息
          BufferedReader br = new BufferedReader(new InputStreamReader(is));
          String mess = br.readLine();
-         System.out.println("服务+1器："+mess);
+         System.out.println("服务器："+mess);
          s.close();
       }
       catch (ConnectException e){
@@ -49,6 +49,5 @@ public class Client {
       } catch (IOException e) {
          e.printStackTrace();
       } 
-      System.out.println("program terminated");
    }
 }
